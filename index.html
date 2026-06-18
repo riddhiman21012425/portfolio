@@ -5,32 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddhiman Sahoo - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Riddhiman Sahoo</div>
+            <div class="logo">
+                <i class="fas fa-code"></i> Riddhiman Sahoo
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="stars"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Riddhiman Sahoo</h1>
-                <p class="tagline">Computer Science Graduate | MBA Scholar | Tech & Business Enthusiast</p>
-                <p class="location">📍 Kolkata, India</p>
+                <div class="animated-greeting">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Riddhiman Sahoo</span></h1>
+                </div>
+                <p class="tagline">
+                    <span class="typing-effect">Computer Science Graduate | MBA Scholar | Tech & Business Enthusiast</span>
+                </p>
+                <p class="location">
+                    <i class="fas fa-map-marker-alt"></i> Kolkata, India
+                </p>
                 <div class="hero-buttons">
-                    <button class="cta-button">Download CV</button>
-                    <button class="cta-button secondary">Connect</button>
+                    <button class="cta-button primary-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                    <button class="cta-button secondary-btn">
+                        <i class="fas fa-handshake"></i> Let's Connect
+                    </button>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -41,22 +65,34 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Riddhiman Sahoo, a Computer Science graduate from VIT Vellore with a passion for technology and business strategy. Currently pursuing my MBA at XIM Bhubaneswar, I'm bridging the gap between technical expertise and business acumen.</p>
+                <div class="about-text fade-in">
+                    <p class="intro-text">
+                        👋 Hello! I'm Riddhiman Sahoo, a <span class="text-highlight">Computer Science graduate from VIT Vellore</span> with a passion for technology and business strategy. Currently pursuing my <span class="text-highlight">MBA at XIM Bhubaneswar</span>, I'm bridging the gap between technical expertise and business acumen.
+                    </p>
                     
-                    <p>My academic journey has equipped me with strong technical foundations and now I'm developing strategic business thinking. I'm passionate about leveraging technology to solve real-world problems and create meaningful impact.</p>
+                    <p class="intro-text">
+                        My academic journey has equipped me with strong technical foundations and now I'm developing strategic business thinking. I'm passionate about leveraging technology to solve real-world problems and create meaningful impact.
+                    </p>
 
                     <div class="education">
-                        <h3>Education</h3>
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                         <div class="education-item">
-                            <h4>MBA in Business Administration</h4>
-                            <p class="institution">Xavier Institute of Management, Bhubaneswar (XIM B)</p>
-                            <p class="year">Pursuing</p>
+                            <div class="education-header">
+                                <h4>MBA in Business Administration</h4>
+                                <span class="status-badge pursuing">Pursuing</span>
+                            </div>
+                            <p class="institution">
+                                <i class="fas fa-university"></i> Xavier Institute of Management, Bhubaneswar (XIM B)
+                            </p>
                         </div>
                         <div class="education-item">
-                            <h4>Bachelor of Technology in Computer Science</h4>
-                            <p class="institution">VIT Vellore</p>
-                            <p class="year">Graduated</p>
+                            <div class="education-header">
+                                <h4>Bachelor of Technology in Computer Science</h4>
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <p class="institution">
+                                <i class="fas fa-university"></i> VIT Vellore
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -67,10 +103,116 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2>Professional Background</h2>
-            <div class="experience-content">
-                <p class="placeholder-text">Interned at Centre for Development of Advanced Computing(CDAC), Govt. of India working on Natural Language processing(NLP).
-                Co authored a IEEE research paper titled "Comparative Analysis of Advanced Models for Satellite-Based Aircraft Identification"</p>
+            <h2>Experience & Projects</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>CDAC, Kolkata Internship</h3>
+                    </div>
+                    <p class="role">Natural Language Processing Intern</p>
+                    <p class="description">Interned at Centre for Development of Advanced Computing (CDAC), Govt. of India working on Natural Language Processing (NLP). Co-authored a IEEE research paper titled "Comparative Analysis of Advanced Models for Satellite-Based Aircraft Identification".</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Add Your Project</h3>
+                    </div>
+                    <p class="role">Project Lead / Developer</p>
+                    <p class="description">Share your amazing projects here! Update this card with your personal or professional projects and achievements.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Add</span>
+                        <span class="tech-tag">Your</span>
+                        <span class="tech-tag">Tech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technologies & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Natural Language Processing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Web Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Business Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Strategic Planning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Team Leadership</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Problem Solving</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -95,6 +237,11 @@
                     <h3>Technology</h3>
                     <p>Enthusiast about emerging technologies, software development, and their impact on business and society.</p>
                 </div>
+                <div class="interest-card">
+                    <div class="interest-icon">📚</div>
+                    <h3>Learning</h3>
+                    <p>Continuous learner passionate about staying updated with latest trends in tech and business innovation.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -105,17 +252,47 @@
             <h2>Get In Touch</h2>
             <p>I'd love to hear from you! Whether it's about tech, business, or cooking tips, feel free to reach out.</p>
             <div class="contact-links">
-                <a href="mail to:riddhimansahoo3@gmail.com" class="contact-button">📧 Email</a>
-                <a href="https://www.linkedin.com/in/riddhimansahoo/" class="contact-button">💼 LinkedIn</a>
-                <a href="https://github.com/riddhiman21012425" class="contact-button">🐙 GitHub</a>
+                <a href="mailto:riddhimansahoo3@gmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/riddhimansahoo/" class="contact-button" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/riddhiman21012425" class="contact-button" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com" class="contact-button" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            <div class="contact-form-section">
+                <h3>Send Me a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Riddhiman Sahoo. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Riddhiman Sahoo. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/riddhiman21012425" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/riddhimansahoo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
